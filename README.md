@@ -33,12 +33,6 @@ The dataset contains:
 
 ---
 
-## 📈 Visualization
-
-![Sales by Region](sales_by_region.png)
-
----
-
 ## 🛠️ Tech Stack
 
 - Python
