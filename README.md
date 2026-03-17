@@ -54,3 +54,13 @@ The dataset contains:
 pip install -r requirements.txt
 python main.py
 ```
+
+## 📈 Visualization
+
+### Sales by Region
+
+![Sales Chart](sales_by_region.png)
+
+### Top Products
+
+![Top Products](top_products.png)
