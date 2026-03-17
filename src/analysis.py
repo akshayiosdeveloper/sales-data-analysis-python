@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-#import matplotlib
-#matplotlib.use('TkAgg')
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 def load_data(path):
     df = pd.read_csv(path)
@@ -15,12 +15,15 @@ def analyze_data(df):
 
     return total_sales, avg_profit, region_sales
     
-    
+def top_products(df):
+    top = df.groupby("product")["sales"].sum().sort_values(ascending=False).head(5)
+    return top   
 def plot_region_sales(region_sales):
     region_sales.plot(kind="bar")
     plt.title("Sales by Region")
     plt.xlabel("Region")
     plt.ylabel("Sales")
+    plt.savefig("sales_by_region.png") 
     plt.show()
     
 def run_analysis(path):
@@ -31,5 +34,18 @@ def run_analysis(path):
     print("Total Sales:", total)
     print("Average Profit:", avg)
     print("\nSales by Region:\n", region)
-
+    topproducts_info = top_products(df)
+    print("Top products:",topproducts_info)
+    # plot for region_sales
     plot_region_sales(region)
+    # plot for top product
+    plot_top_products(topproducts_info)
+
+def plot_top_products(top_products):
+    top_products.plot(kind="bar")
+    plt.title("Top 5 Products by Sales")
+    plt.xlabel("Product")
+    plt.ylabel("Sales")
+
+    plt.savefig("top_products.png")
+    plt.show()    

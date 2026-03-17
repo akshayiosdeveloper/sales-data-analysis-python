@@ -1,123 +1,56 @@
-# 📊 Sales Data Analysis Project
+# 📊 Sales Data Analysis (Python + Pandas + Matplotlib)
 
-## 🚀 Overview
+## 📌 Project Overview
 
-This project performs **data analysis and visualization** on sales data using Python.
+This project analyzes sales data to extract meaningful business insights using Python libraries like Pandas, NumPy, and Matplotlib.
 
-It demonstrates:
+---
 
-* Data loading and cleaning
-* Data analysis using NumPy and Pandas
-* Data visualization using Matplotlib
-* Clean project structure (modular code)
+## 📂 Dataset
+
+The dataset contains:
+
+- Sales
+- Profit
+- Region
+- Product details
+
+---
+
+## ❓ Business Questions Answered
+
+1. Which region has the highest total sales?
+2. What is the average profit across all sales?
+3. Which region is underperforming?
+
+---
+
+## 📊 Insights
+
+- East region generated the highest sales (5620)
+- South region has lower performance compared to others
+- Average profit is approximately 181.75
+
+---
+
+## 📈 Visualization
+
+![Sales by Region](sales_by_region.png)
 
 ---
 
 ## 🛠️ Tech Stack
 
-* Python
-* NumPy
-* Pandas
-* Matplotlib
-
----
-
-## 📂 Project Structure
-
-```
-sales-data-analysis/
-│── data/
-│   └── sales_data.csv
-│
-│── notebooks/
-│   └── mini_project1.ipynb
-│
-│── src/
-│   ├── analysis.py
-│   └── main.py
-│
-└── README.md
-```
-
----
-
-## ⚙️ Features
-
-* Calculate total sales
-* Calculate average profit
-* Analyze sales by region
-* Generate bar chart visualization
+- Python
+- Pandas
+- NumPy
+- Matplotlib
 
 ---
 
 ## ▶️ How to Run
 
-### 1. Clone the repository
-
-```
-git clone <your-repo-link>
-cd sales-data-analysis
-```
-
-### 2. Install dependencies
-
-```
-pip install pandas numpy matplotlib
-```
-
-### 3. Run the project
-
-```
+```bash
+pip install -r requirements.txt
 python main.py
 ```
-
----
-
-## 📈 Output
-
-* Console output:
-
-  * Total Sales
-  * Average Profit
-  * Sales by Region
-
-* Visualization:
-
-  * Bar chart of sales by region
-
----
-
-## 📸 Sample Output
-
-(Add screenshot here later)
-
----
-
-## 🧠 Learnings
-
-* Transition from Jupyter Notebook to Python scripts
-* Writing modular and reusable code
-* Handling real-world project structure
-* Basic data analysis workflow
-
----
-
-## 🚀 Future Improvements
-
-* Add more visualizations
-* Build a dashboard
-* Integrate machine learning using Scikit-learn
-* Deploy as a web app using FastAPI
-
----
-
-## 👨‍💻 Author
-
-Akshay Kumar
-
----
-
-## ⭐ If you like this project
-
-Give it a star on GitHub ⭐
-
